@@ -257,3 +257,7 @@ if ( $(window).width() >= 767) {
         $('.dropdown-toggle', this).trigger('click'); 
     });
 } 
+
+$(window).load(function(){
+    alert("teste");
+});

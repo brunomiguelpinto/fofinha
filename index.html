@@ -671,14 +671,17 @@
 	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
 	<script type="text/javascript">
 		/* ---- Portfolio Isotope ---- */
+			
 		$(document).ready(function(){
+			
+			$(window).on('load', function(){
+				alert("teste");
+				$('.grid').isotope();
+			});
+
 			var $grid = $('.grid').isotope({
 			    layoutMode: 'masonry'
 			});
-
-			setTimeout(function(){ 
-				$('.grid').isotope();
-			}, 900);
 
 			$('.filter-button-group').on('click', 'li', function() {
 			    var filterValue = $(this).attr('data-filter');
