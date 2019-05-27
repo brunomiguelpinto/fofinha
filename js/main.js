@@ -57,7 +57,11 @@ $('#work').magnificPopup({
     type: 'image',
     fixedContentPos: false,
     removalDelay: 300,
-    mainClass: 'mfp-fade'
+    mainClass: 'mfp-fade',
+    gallery: {
+        enabled: true,
+        preload: [0,2]
+    }
 });
 
 /* ---- popup image ---- */
@@ -92,6 +96,7 @@ $(document).ready(function() {
             scrollTop: 0
         }, 1200);
     });
+    $('#bugfix').click();
 });
 
 /* ---- navbar offset ---- */
