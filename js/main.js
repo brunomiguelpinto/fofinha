@@ -98,8 +98,9 @@ $(document).ready(function() {
     });
     
     setTimeout(function(){ 
+        $('#bugfix2').click();
         $('#bugfix').click();
-    }, 900)
+    }, 1000)
 });
 
 /* ---- navbar offset ---- */
