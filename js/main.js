@@ -55,6 +55,9 @@ function submitMSG(valid, msg) {
 $('#work').magnificPopup({
     delegate: 'a.zoom',
     type: 'image',
+    fixedContentPos: false,
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
     gallery: {
         enabled: true,
         preload: [0,2]
@@ -97,7 +100,7 @@ $(document).ready(function() {
     setTimeout(function(){ 
         $('#bugfix2').click();
         $('#bugfix').click();
-    }, 1000)
+    }, 900)
 });
 
 /* ---- navbar offset ---- */
@@ -119,6 +122,49 @@ $(window).scroll(function() {
     }
 });
 
+
+/* ---- animations ---- */
+if (typeof sr == 'undefined') {
+    window.sr = ScrollReveal({
+        duration: 1600,
+        delay: 50
+    });
+}
+Royal_Preloader.config({
+    onComplete: function () {
+        triggerReveals();
+    }
+});
+function triggerReveals() {
+    sr.reveal('.bottomReveal', {
+        origin: 'bottom'
+    }).reveal('.leftReveal', {
+        origin: 'left'
+    }).reveal('.rightReveal', {
+        origin: 'right'
+    }).reveal('.topReveal', {
+        origin: 'top'
+    });
+
+    sr.reveal('.rotateBottomReveal', {
+        origin: 'bottom',
+        rotate: { x: 90 }
+    }).reveal('.rotateLeftReveal', {
+        origin: 'left',
+        rotate: { x: 90 }
+    }).reveal('.rotateRightReveal', {
+        origin: 'right',
+        rotate: { x: 90 }
+    }).reveal('.rotateTopReveal', {
+        origin: 'top',
+        rotate: { x: 90 }
+    })
+
+    sr.reveal('.scaleReveal', {
+        origin: 'top',
+        scale: 0.6
+    });
+}
 
 /* ---- close mobile nav on click ---- */
 $(document).on('click','.navbar-collapse.in',function(e) {
