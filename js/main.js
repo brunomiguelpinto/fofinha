@@ -55,9 +55,6 @@ function submitMSG(valid, msg) {
 $('#work').magnificPopup({
     delegate: 'a.zoom',
     type: 'image',
-    fixedContentPos: false,
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
     gallery: {
         enabled: true,
         preload: [0,2]
