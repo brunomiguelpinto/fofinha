@@ -52,16 +52,19 @@ function submitMSG(valid, msg) {
 }
 
 /* ---- our work gallery ---- */
-$('#work').magnificPopup({
-    delegate: 'a.zoom',
-    type: 'image',
-    fixedContentPos: false,
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-        enabled: true,
-        preload: [0,2]
-    }
+$(document).ready(function() {
+    $('#work').magnificPopup({
+        delegate: 'a.zoom',
+        type: 'image',
+        fixedContentPos: false,
+        removalDelay: 500,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true,
+            preload: [0,2
+            ]
+        }
+    });
 });
 
 /* ---- popup image ---- */
