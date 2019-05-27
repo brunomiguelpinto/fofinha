@@ -51,25 +51,29 @@ function submitMSG(valid, msg) {
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
-/* ---- our work gallery ---- */
-$('#work').magnificPopup({
-    delegate: 'a.zoom',
-    type: 'image',
-    gallery: {
-        enabled: true,
-        preload: [0,2]
-    }
-});
-
-/* ---- popup image ---- */
-$('.popup-img').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade'
-});
 
 /* ---- popup video ---- */
 $(document).ready(function() {
+
+    /* ---- our work gallery ---- */
+    $('#work').magnificPopup({
+        delegate: 'a.zoom',
+        type: 'image',
+        gallery: {
+            enabled: true,
+            preload: [0,2]
+        }
+    });
+
+    /* ---- popup image ---- */
+    $('.popup-img').magnificPopup({
+        type: 'image',
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
+
+
+
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
