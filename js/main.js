@@ -96,7 +96,10 @@ $(document).ready(function() {
             scrollTop: 0
         }, 1200);
     });
-    $('#bugfix').click();
+    
+    setTimeout(function(){ 
+        $('#bugfix').click();
+    }, 900)
 });
 
 /* ---- navbar offset ---- */
