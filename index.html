@@ -676,11 +676,10 @@
 			    layoutMode: 'masonry'
 			});
 
-			$grid.isotope('shuffle');
+			setTimeout(function(){ 
+				$('.grid').isotope();
+			}, 900);
 
-			$grid.isotope( 'on', 'arrangeComplete', function() {
-				console.log('arrange is complete');
-			});
 			$('.filter-button-group').on('click', 'li', function() {
 			    var filterValue = $(this).attr('data-filter');
 			    $grid.isotope({
