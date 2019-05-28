@@ -61,76 +61,7 @@ $('#work').magnificPopup({
     gallery: {
         enabled: true,
         preload: [0,2]
-    },
-    callbacks: {
-  beforeOpen: function() {
-    console.log('Start of popup initialization');
-  },
-  elementParse: function(item) {
-    // Function will fire for each target element
-    // "item.el" is a target DOM element (if present)
-    // "item.src" is a source that you may modify
-
-    console.log('Parsing content. Item object that is being parsed:', item);
-  },
-  change: function() {
-    console.log('Content changed');
-    console.log(this.content); // Direct reference to your popup element
-  },
-  resize: function() {
-    console.log('Popup resized');
-    // resize event triggers only when height is changed or layout forced
-  },
-  open: function() {
-    console.log('Popup is opened');
-  },
-
-  beforeClose: function() {
-    // Callback available since v0.9.0
-    console.log('Popup close has been initiated');
-  },
-  close: function() {
-    console.log('Popup removal initiated (after removalDelay timer finished)');
-  },
-  afterClose: function() {
-    console.log('Popup is completely closed');
-  },
-
-  markupParse: function(template, values, item) {
-    // Triggers each time when content of popup changes
-    // console.log('Parsing:', template, values, item);
-  },
-  updateStatus: function(data) {
-    console.log('Status changed', data);
-    // "data" is an object that has two properties:
-    // "data.status" - current status type, can be "loading", "error", "ready"
-    // "data.text" - text that will be displayed (e.g. "Loading...")
-    // you may modify this properties to change current status or its text dynamically
-  },
-  imageLoadComplete: function() {
-    // fires when image in current popup finished loading
-    // avaiable since v0.9.0
-    console.log('Image loaded');
-  },
-
-
-  // Only for ajax popup type
-  parseAjax: function(mfpResponse) {
-    // mfpResponse.data is a "data" object from ajax "success" callback
-    // for simple HTML file, it will be just String
-    // You may modify it to change contents of the popup
-    // For example, to show just #some-element:
-    // mfpResponse.data = $(mfpResponse.data).find('#some-element');
-
-    // mfpResponse.data must be a String or a DOM (jQuery) element
-
-    console.log('Ajax content loaded:', mfpResponse);
-  },
-  ajaxContentAdded: function() {
-    // Ajax content is loaded and appended to DOM
-    console.log(this.content);
-  }
-}
+    }
 });
 
 /* ---- popup image ---- */
@@ -257,7 +188,3 @@ if ( $(window).width() >= 767) {
         $('.dropdown-toggle', this).trigger('click'); 
     });
 } 
-
-$(window).load(function(){
-    alert("teste");
-});
