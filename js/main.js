@@ -85,6 +85,9 @@ $(document).ready(function() {
 
 /* ---- nav smooth scroll ---- */
 $(document).ready(function() {
+    /* ---- fix js bug reveal ---- */
+    jQuery('[data-sr-id]').removeAttr('data-sr-id').removeAttr('style');
+
     $('.scroll-link').on('click', function(event) {
         event.preventDefault();
         var sectionID = $(this).attr("data-id");
