@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body class="one-page" data-spy="scroll" data-target="#nav-scroll">
 
 <!-- preloader -->
 <div id="preloader">
@@ -43,10 +43,13 @@
 </div>
 <!-- / preloader -->
 
+<div id="top">
+</div>
+
 <!-- header -->
 <header>
     <!-- nav -->
-    <nav class="navbar navbar-default">
+    <nav id="nav-scroll" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -55,46 +58,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo"></a>
             </div><!-- / navbar-header -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><span>HOME</span></a></li>
-                    <li><a href="about.html"><span>ABOUT</span></a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>BLOG</span> <span class="dropdown-icon"></span></a>
-                    <ul class="dropdown-menu animated zoomIn fast">
-                        <li><a href="blog.html"><span>BLOG FULLWIDTH</span></a></li>
-                        <li><a href="blog-masonry.html"><span>BLOG MASONRY</span></a></li>
-                        <li><a href="blog-sidebar.html"><span>BLOG SIDEBAR</span></a></li>
-                        <li><a href="single-post-full.html"><span>POST FULLWIDTH</span></a></li>
-                        <li><a href="single-post.html"><span>POST SIDEBAR</span></a></li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>PORTFOLIO</span> <span class="dropdown-icon"></span></a>
-                    <ul class="dropdown-menu animated zoomIn fast">
-                        <li><a href="grid-2col.html"><span>GRID 2COL</span></a></li>
-                        <li><a href="grid-3col.html"><span>GRID 3COL</span></a></li>
-                        <li><a href="grid-4col.html"><span>GRID 4COL</span></a></li>
-                        <li><a href="masonry-2col.html"><span>MASONRY 2COL</span></a></li>
-                        <li><a href="masonry-3col.html"><span>MASONRY 3COL</span></a></li>
-                        <li><a href="masonry-4col.html"><span>MASONRY 4COL</span></a></li>
-                        <li><a href="single-project.html"><span>SINGLE PROJECT</span></a></li>
-                        <li><a href="single-project-2.html"><span>SINGLE PROJECT 2</span></a></li>
-                        <li><a href="single-project-3.html"><span>SINGLE PROJECT 3</span></a></li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>PAGES</span> <span class="dropdown-icon"></span></a>
-                    <ul class="dropdown-menu animated zoomIn fast">
-                        <li><a href="about2.html"><span>ABOUT 2</span></a></li>
-                        <li><a href="contact2.html"><span>CONTACT 2</span></a></li>
-                        <li><a href="404.html"><span>404 PAGE</span></a></li>
-                        <li><a href="components.html"><span>COMPONENTS</span></a></li>
-                    </ul>
-                    </li>
-                    <li><a href="contact.html"><span>CONTACT</span></a></li>
+                    <li><a href="#top" class="smooth-scroll"><span>HOME</span></a></li>
+                    <li><a href="#about" class="smooth-scroll"><span>ABOUT US</span></a></li>
+                    <li><a href="#services" class="smooth-scroll"><span>SERVICES</span></a></li>
+                    <li><a href="#portfolio" class="smooth-scroll"><span>PORTFOLIO</span></a></li>
+                    <li><a href="#blog" class="smooth-scroll"><span>BLOG</span></a></li>
+                    <li><a href="#contact"><span>CONTACT US</span></a></li>
                 </ul>
             </div><!--/ nav-collapse -->
         </div><!-- / container -->
@@ -102,12 +75,14 @@
     <!-- / nav -->
 
     <!-- header-banner -->
-    <div id="header-banner" class="demo-1">
+    <div id="header-banner" class="demo-13">
         <div class="banner-content text-center">
-            <div class="banner-info">
-                <h1>MINIMAL PORTFOLIO</h1>
-                <p>Minimal Portfolio Bootstrap Theme</p>
-            </div><!-- / banner-info -->
+            <div class="banner-border">
+                <div class="banner-info">
+                    <h1>MINIMAL PORTFOLIO</h1>
+                    <p>Minimal Portfolio Bootstrap Theme</p>
+                </div><!-- / banner-info -->
+            </div><!-- / banner-border -->
         </div><!-- / banner-content -->
     </div>
     <!-- / header-banner -->
@@ -116,9 +91,236 @@
 
 <!-- content -->
 
-<!-- portfolio section -->
-<section id="portfolio">
+<section id="about" class="pb-0">
     <div class="container">
+        <div class="section-w-image">
+            <div class="row">
+                <div class="col-sm-6 about-img"><p></p></div>
+                <div class="col-sm-6 col-sm-offset-6 about-description">
+                    <h4>ABOUT US</h4>
+                    <p>Aliquam pellentesque nunc enim, vel posuere velit commodo blandit. Proin lobortis, nunc id fringilla hendrerit, est metus efficitur massa, sed euismod neque sem id ligula. Etiam sit amet magna dignissim.</p>
+                    <p>Mauris eget elit auctor, faucibus purus vitae, consectetur quam. Cras imperdiet eu velit interdum scelerisque.</p>
+
+                    <h4 class="space-top">SKILLS</h4>
+                    <p><strong>PHOTOSHOP</strong> <span class="pull-right">90%</span></p>
+                    <div class="progress progress-label">
+                        <div class="progress-bar progress-bar-default animated first fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        </div>
+                    </div><!-- / progress -->
+
+                    <p><strong>ILLUSTRATOR</strong> <span class="pull-right">80%</span></p>
+                    <div class="progress progress-label">
+                        <div class="progress-bar progress-bar-primary animated second fadeInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                    </div><!-- / progress -->
+
+                    <p><strong>GRAPHIC DESIGN</strong> <span class="pull-right">90%</span></p>
+                    <div class="progress progress-label">
+                        <div class="progress-bar progress-bar-success animated third fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        </div>
+                    </div><!-- / progress -->
+
+                    <p><strong>BRANDING</strong> <span class="pull-right">80%</span></p>
+                    <div class="progress progress-label">
+                        <div class="progress-bar progress-bar-info animated fourth fadeInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                    </div><!-- / progress -->
+
+                </div><!-- / about-description -->
+            </div><!-- / row -->
+        </div><!-- / section-w-image -->
+    </div><!-- / container -->
+</section>
+<!-- / about -->
+
+<section id="services">
+    <div class="container">
+        <div class="page-header no-margin text-center">
+            <h2>SERVICES</h2>
+        </div>
+        <p class="text-center space-bottom-30">Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi.</p>
+        <div class="row">
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <h5>GRAPHIC DESIGN</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h5>LOGO DESIGN</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-tag"></i>
+                    </div>
+                    <h5>BRANDING</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-tint"></i>
+                    </div>
+                    <h5>ILLUSTRATIONS</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <h5>MARKETING</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+
+            <!-- feature-block -->
+            <div class="col-xs-6 col-lg-4 feature-center">
+                <div class="feature block">
+                    <div class="feature-icon">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <h5>SEO</h5>
+                    <p>Quisque maximus posuere laoreet. In quam libero, lobortis eu dapibus eget, condimentum et mi. Aliquam et lectus aliquet.</p>
+                </div>
+            </div><!-- / col-md-4 -->
+            <!-- / feature-block -->
+    
+        </div><!-- / row -->
+
+        <!-- stacked pricing table 3col -->
+        <div class="page-header no-margin text-center">
+                <h2>PRICING</h2>
+            </div>
+        <div id="pricing">
+            <div class="row stacked">
+                <!-- pricing-table -->
+                <div class="col-sm-4">
+                    <div class="pricing-table">
+                        <div class="pricing-table-title">
+                            <h5 class="pricing-title">SINGLE LICENSE</h5>
+                        </div>
+                        <div class="pricing-table-price">
+                            <p>
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-price">14</span>
+                                <span class="pricing-period">/ one-time</span>
+                            </p>
+                        </div>
+                        <div class="pricing-table-content">
+                            <ul>
+                                <li><span class="text-primary">Single Installation</span></li>
+                                <li>Free Lifetime Updates</li>
+                                <li>24/7 Support</li>
+                                <li>Design Files</li>
+                                <li>SASS Files Included</li>
+                                <li>Well Documented</li>
+                            </ul>
+                            <div class="pricing-table-button">
+                                <a href="#x" class="btn btn-primary-filled"><strong>BUY NOW</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / pricing-table -->
+                <!-- pricing-table -->
+                <div class="col-sm-4">
+                    <div class="featured pricing-table">
+                        <div class="pricing-table-title">
+                            <h5 class="pricing-title">MULTIPLE LICENSE</h5>
+                        </div>
+                        <div class="pricing-table-price">
+                            <p>
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-price">40</span>
+                                <span class="pricing-period">/ one-time</span>
+                            </p>
+                        </div>
+                        <div class="pricing-table-content">
+                            <ul>
+                                <li><span class="text-primary">Multiple Installations</span></li>
+                                <li>Free Lifetime Updates</li>
+                                <li>24/7 Support</li>
+                                <li>Design Files</li>
+                                <li>SASS Files Included</li>
+                                <li>Well Documented</li>
+                            </ul>
+                            <div class="pricing-table-button">
+                                <a href="#x" class="btn btn-lg btn-primary-filled"><strong>BUY NOW</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / pricing-table -->
+                <!-- pricing-table -->
+                <div class="col-sm-4">
+                    <div class="pricing-table">
+                        <div class="pricing-table-title">
+                            <h5 class="pricing-title">RESELLER LICENSE</h5>
+                        </div>
+                        <div class="pricing-table-price">
+                            <p>
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-price">750</span>
+                                <span class="pricing-period">/ one-time</span>
+                            </p>
+                        </div>
+                        <div class="pricing-table-content">
+                            <ul>
+                                <li><span class="text-primary">Reseller License</span></li>
+                                <li>Free Lifetime Updates</li>
+                                <li>24/7 Support</li>
+                                <li>Design Files</li>
+                                <li>SASS Files Included</li>
+                                <li>Well Documented</li>
+                            </ul>
+                            <div class="pricing-table-button">
+                                <a href="#x" class="btn btn-primary-filled"><strong>BUY NOW</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / pricing-table -->
+            </div><!-- / row -->
+        </div><!-- / pricing -->
+
+    </div><!-- / container -->
+</section>
+<!-- / services -->
+
+<!-- portfolio section -->
+<section id="portfolio" class="info-box w-shadow bg-light">
+    <div class="container">
+        <div class="page-header no-margin text-center">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <p class="text-center space-bottom-30">Sed imperdiet vitae ipsum a tincidunt. Vivamus id ligula turpis. Duis viverra arcu quis.</p>
         <!-- portfolio filter -->
         <ul class="portfolio-filter list-inline text-center">
             <li><a href="#" data-group="all" class="active">ALL</a></li>
@@ -461,7 +663,7 @@
 <!-- / portfolio section -->
 
 <!-- blog section 3col -->
-<section id="blog-small">
+<section id="blog">
     <div class="container">
         <div class="page-header no-margin text-center">
             <h2>LATEST POSTS</h2>
@@ -534,10 +736,81 @@
 </section>
 <!-- / blog section 3col -->
 
+<section id="contact" class="bg-light">
+    <div class="container">
+        <div class="page-header no-margin text-center">
+            <h2>CONTACT US</h2>
+        </div>
+        <p class="text-center space-bottom-30">Sed imperdiet vitae ipsum a tincidunt. Vivamus id ligula turpis. Duis viverra arcu quis.</p>
+        <div class="row">
+            <div class="col-sm-4 contact-info text-center space-bottom">
+                <div class="contact-icon">
+                    <i class="lnr lnr-map-marker"></i>
+                </div>
+                <h5>ADDRESS</h5>
+                <p>33 King Street, Suite 133</p>
+                <p>Miami, Florida</p>
+            </div><!-- / fcontact-info -->
+
+            <div class="col-sm-4 contact-info text-center space-bottom">
+                <div class="contact-icon">
+                    <i class="lnr lnr-smartphone"></i>
+                </div>
+                <h5>PHONE</h5>
+                <p>Office: <a href="tel:+0123456789">+0123 456 789</a></p>
+                <p>Support: <a href="tel:+0987654321">+0987 654 321</a></p>
+            </div><!-- / contact-info -->
+
+            <div class="col-sm-4 contact-info text-center space-bottom">
+                <div class="contact-icon">
+                    <i class="lnr lnr-envelope"></i>
+                </div>
+                <h5>EMAIL</h5>
+                <p>Office: <a href="mailto:office@yoursite.com">office@yoursite.com</a></p>
+                <p>Support: <a href="mailto:hello@yoursite.com">hello@yoursite.com</a></p>
+            </div><!-- / contact-info -->
+
+        </div><!-- / row -->
+
+        <div class="row contact-area">
+            <div class="col-sm-6 map">
+                <!-- google map -->
+                <div id="map"></div>
+                <!-- / google map -->
+            </div><!-- / map -->
+
+            <div class="col-sm-6 contact-form-area">
+                <!-- contact form 1col -->
+                <div id="contact-form">
+                    <form id="contactForm" data-toggle="validator">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="FULL NAME" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="5" placeholder="MESSAGE" required></textarea>
+                        <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" id="form-submit" class="btn btn-md btn-primary-filled btn-form-submit">SUBMIT FORM</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>  
+                    </form>
+                </div><!-- / contact form 1col -->
+            </div><!-- / col-sm-6 -->
+        </div><!-- / contact-area -->
+
+    </div><!-- / container -->
+</section>
+<!-- / contact -->
+
 <!-- / content -->
 
 <!-- footer -->
-<footer>
+<footer class="dark">
     <div class="container">
         <p class="footer-info">© MP - MINIMAL PORTFOLIO
             <span class="social pull-right">
@@ -575,8 +848,22 @@ $('.lightbox').each(function() {
 <!-- / lightbox -->
 <!-- / portfolio -->
 
+<!-- google maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA40uewXP25u1A4o9u8ueBimZZwIdNLkY"></script>
+<script src="js/map.js"></script>
+<!-- / google maps -->
+
+<!-- contact-form -->
+<script src="js/validator.min.js" type="text/javascript"></script>
+<script src="js/form-scripts.js" type="text/javascript"></script>
+<!-- / contact-form -->
+
 <!-- preloader -->
 <script src="js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- preloader -->
+<script src="js/smooth-scroll.js"></script>
 <!-- / preloader -->
 
 <!-- / javascript -->
