@@ -1788,8 +1788,15 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
   background-color: #ebebeb;
 }
 
+#header-banner.demo-contact {
+  background: url("../images/portefolio_img/IS-SuitePrincipal_.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+}
+
 #header-banner.demo-1 {
-  background: url("../images/banner-bg.jpg") no-repeat;
+  background: url("../images/portefolio_img/SEIXAL-2.gif") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #cccccc;
@@ -2441,7 +2448,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 
 .about-img {
   position: absolute;
-  background: url(../images/about-img.jpg) scroll center no-repeat;
+  background: url(../images/portefolio_img/Untitled-1.gif) scroll center no-repeat;
   background-size: cover;
   height: 100%;
 }
